@@ -2,6 +2,7 @@ import blogs from "@/Data/BlogData";
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import BlogCard from "./Blogs/BlogCard";
+import Link from "next/link";
 
 const Featured = () => {
   const featuredBlogs = blogs.filter((blog) => blog.featured);
@@ -19,8 +20,26 @@ const Featured = () => {
         {/*  */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-6 sm:px-0">
           {featuredBlogs.map((blog) => (
-            <BlogCard key={blog.id} />
+            <BlogCard
+              key={blog.id}
+              title={blog.title}
+              desc={blog.description}
+              slug={blog.slug}
+              imgUrl={blog.imgUrl}
+            />
           ))}
+        </div>
+
+        {/*  */}
+        <div className="flex justify-center items-center pt-16">
+          <Link href="/blogs">
+            <button
+              className="text-white bg-transparent hover:bg-secondary border-2 border-secondary shadow-lg px-8 py-3 rounded-full hover:scale-105 duration-200"
+              type={"button"}
+            >
+              See all
+            </button>
+          </Link>
         </div>
       </div>
     </section>

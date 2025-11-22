@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Featured from "@/components/Featured";
 import Hero from "@/components/hero";
 import React from "react";
@@ -7,6 +8,7 @@ function page() {
     <div>
       <Hero />
       <Featured />
+      <Contact />
     </div>
   );
 }

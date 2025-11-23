@@ -5,7 +5,9 @@ function Contact() {
     <section className="bg-black text-white py-16 lg:px-24 px-4">
       <div className="max-w-5xl mx-auto lg:text-center">
         {/* Heading */}
-        <h2>Stay connected with Us!</h2>
+        <h2 className="text-4xl font-bold mb-4 text-[#8a7968] text-center">
+          Stay connected with Us!
+        </h2>
         <p className="text-[#ffffff] mb-8">
           Got any questions, feedback, or ideas you'd like to share? Don't
           hesitate to reach out to us! We're always here to help and listen.
@@ -46,7 +48,20 @@ function Contact() {
               />
             </div>
 
-            {/* Message */}
+            {/* Message  */}
+            <div>
+              <label htmlFor="message" className="block text-sm mb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                placeholder="Write your message here"
+                rows={5}
+                required
+                className="w-full py-3 px-4 bg-gray-200 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#8a7986]"
+              ></textarea>
+              {/*  */}
+            </div>
           </div>
         </form>
       </div>

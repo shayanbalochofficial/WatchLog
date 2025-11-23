@@ -23,17 +23,25 @@ export default function MeetTheCreator() {
             Meet the <span className="text-[#8a7968] underline">creator</span>
           </h2>
           <p className="text-lg mb-4">
-            Hi, I’m <span className="text-[#8a7968] font-semibold">Shayan</span>,
-            a passionate developer and tech enthusiast currently pursuing my A
+            Hi, I’m <span className="text-[#8a7968] font-semibold">Shayan</span>
+            , a passionate developer and tech enthusiast currently pursuing my A
             levels at Cedar College.
           </p>
 
           <p className="text-lg mb-4">
             So far, I’ve learned TypeScript and Next.js, and I’m constantly
             exploring new technologies to improve my coding expertise. I created{" "}
-            <span className="text-[#8a7968] font-semibold">Watchlog</span> to
-            share my knowledge and help fellow learners with coding tutorials,
-            focusing on practical examples and easy-to-understand explanations.
+            <span className="text-[#8a7968] font-semibold">Watchlog</span> for
+            people who love watches and blogs. A part of my project, made for{" "}
+            <span className="text-blue-300 font-semibold underline">
+              <Link
+                href="https://midnight.hackclub.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Midnight
+              </Link>
+            </span>
           </p>
           <p className="text-lg mb-4">
             My goal is to simplify complex programming concepts and make them
@@ -65,6 +73,3 @@ export default function MeetTheCreator() {
     </section>
   );
 }
-
-
-

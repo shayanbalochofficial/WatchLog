@@ -60,8 +60,14 @@ function Contact() {
                 required
                 className="w-full py-3 px-4 bg-gray-200 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#8a7986]"
               ></textarea>
-              {/*  */}
             </div>
+
+            <button
+              className="mt-4 py-3 px-8 bg-transparent border-2 border-[#8a7968] text-[#8a7968] font-semibold rounded-md hover:bg-[#8a7968] hover:text-black transition"
+              type="submit"
+            >
+              Submit
+            </button>
           </div>
         </form>
       </div>

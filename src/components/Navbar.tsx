@@ -1,5 +1,6 @@
+"use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -101,11 +102,32 @@ const Navbar = () => {
               href="/"
               className="block py-2 hover:bg-[#8a7968] transition-all"
             >
-              Home{" "}
+              Home
             </Link>
           </li>
           <li>
-            <Link href="/About" className=""></Link>
+            <Link
+              href="/About"
+              className="block py-2 hover:bg-[#8a7968] transition-all "
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/blogs"
+              className="block py-2 hover:bg-[#8a7968] transition-all"
+            >
+              Blogs
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className="block py-2 hover:bg-[#8a7986] transition-all"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
